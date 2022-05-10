@@ -23,7 +23,7 @@ export default function ItemCount({ stock, initial, onAdd }) {
 
     return (
         <>
-            <button onClick={subsCount} variant="outlined">-</button>
+            <button onClick={subsCount}>-</button>
             {count}
             <button onClick={myCount}>+</button>
             <br></br>
