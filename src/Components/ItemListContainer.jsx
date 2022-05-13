@@ -1,17 +1,31 @@
 import React from "react";
-import ItemCount from './ItemCount';
+
+import { useState } from "react";
+import { useEffect } from "react";
+
+import promises  from "./MyUtilities/promises";
+import products  from "./MyUtilities/products";
+import ItemList from "./ItemList";
+import s from "./item.module.css";
+
 
 export default function ItemListContainer() {
+const [items, setItems] = useState([]);
 
+useEffect(() => {
+  promises(3000, products)
+  .then(res => setItems(res))
+.catch(error => console.log (error));
+
+}, [items])
 
 
   return (
-
-    <div>
-      <h2>Aquí irá mi catálogo de productos</h2>
-      <ItemCount initial={1} stock={5}  />
-    </div>
-
-
+  
+      <div className = {s.myCards} >
+        <ItemList products ={items}/>
+      </div>
+       
   )
 }
+

@@ -1,0 +1,15 @@
+.myCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+
+}
+
+.cardImage {
+
+    margin: 1rem auto;
+    height: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

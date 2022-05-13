@@ -1,0 +1,25 @@
+.div__shoppingCartBtn {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 7rem;
+    width: 12rem;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 30px;
+background: #f8e3d3;
+box-shadow:  20px 20px 60px #d3c1b3,
+             -20px -20px 60px #fffff3;
+} 
+
+/*   .div__buyCartBtn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+
+
+
+}   */
